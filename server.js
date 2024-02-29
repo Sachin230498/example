@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 // Route for home page
 app.get("/hh", (req, res) => {
-  res.send("Welcome!"); // Add your welcome message here
+  res.send("Welcome a!"); // Add your welcome message here
 });
 
  app.use("/api/auth", authRoutes);
