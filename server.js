@@ -1,9 +1,9 @@
 // app.js
 
 const express = require("express");
-const connectDB = require("./src/config/db");
+ const connectDB = require("./src/config/db");
 const cors = require("cors");
-const authRoutes = require("./src/routes/authroute");
+ const authRoutes = require("./src/routes/authroute");
 
 const app = express();
 connectDB();
@@ -21,9 +21,9 @@ app.get("/hh", (req, res) => {
   res.send("Welcome!"); // Add your welcome message here
 });
 
-app.use("/api/auth", authRoutes);
+ app.use("/api/auth", authRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5010;
 app.listen(PORT, () =>
   console.log(`Server running at http://localhost:${PORT}`)
 );
