@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Review App!'); // Add your welcome message here
 });
 
+app.get("/hero", (req, res) => {
+  res.send("Welcome!"); // Add your welcome message here
+});
+
 
 
 const PORT = process.env.PORT || 5050;
